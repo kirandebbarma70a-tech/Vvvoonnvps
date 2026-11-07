@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # आपका असली Cloudflare Tunnel Token
-CF_TOKEN="eyJhIjoiNTc2NTBjMjcxMmNmMjhjMGJlNjMyMzY1NGI1MTNhMmUiLCJ0IjoiOTc0ZjVhYWMtNzI5MS00ZjE3LWI2NTItY2I1M2Q2MDdlNjBiIiwicyI6Ik1HVTFZMkZpTkdNdE1EbGxOeTAwTlRCbUxXRXhNVE10WkRKbVptSmpaV0psWWpGaCJ9"
+CF_TOKEN="cloudflared tunnel run --token eyJhIjoiNTc2NTBjMjcxMmNmMjhjMGJlNjMyMzY1NGI1MTNhMmUiLCJ0IjoiNmVkZjY0NmQtNTM4OC00MTFiLWJlMjEtMjgyOTBlNDFjYTJjIiwicyI6IlpUVXhaVEpqWVdNdFltVmlNeTAwWXpRM0xXSm1OVFF0TVRjeVpqVTBOR1ppTjJWbCJ9"
 
 # रूट पासवर्ड सेट करें
 echo "root:root" | chpasswd
