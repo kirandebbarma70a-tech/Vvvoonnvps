@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My VPS Connection Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0b0f19; color: #f8fafc; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1e293b; padding: 30px; border-radius: 12px; width: 100%; max-width: 450px; box-shadow: 0 10px 25px rgba(0,0,0,0.5); border: 1px solid #334155; }
+        h2 { color: #38bdf8; margin-top: 0; text-align: center; }
+        .info-box { background: #0f172a; padding: 15px; border-radius: 8px; margin: 15px 0; font-family: monospace; font-size: 15px; border: 1px solid #1e293b; }
+        .label { color: #94a3b8; display: inline-block; width: 110px; }
+        .value { color: #f43f5e; font-weight: bold; }
+        .note { font-size: 13px; color: #cbd5e1; text-align: center; margin-top: 20px; line-height: 1.5; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🚀 VPS Connection Info</h2>
+        <p style="text-align: center; color: #94a3b8; font-size: 14px;">Termius या किसी भी SSH क्लाइंट में नीचे दी गई जानकारी डालें:</p>
+        
+        <div class="info-box">
+            <div><span class="label">Host / IP:</span> <span class="value" id="host-ip">लोड हो रहा है...</span></div>
+            <div><span class="label">Port:</span> <span class="value">22 (या Cloudflare डोमेन)</span></div>
+            <div><span class="label">Username:</span> <span class="value">root</span></div>
+            <div><span class="label">Password:</span> <span class="value">root</span></div>
+        </div>
+
+        <div class="note">
+            💡 <b>कैसे कनेक्ट करें:</b><br>
+            Termius ऐप खोलें, New Host बनाएं। Address में ऊपर दिया गया डोमेन/लिंक डालें, Port में 22 डालें, और Username/Password में <b>root</b> भरकर कनेक्ट करें!
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('host-ip').innerText = window.location.hostname;
+    </script>
+</body>
+</html>
